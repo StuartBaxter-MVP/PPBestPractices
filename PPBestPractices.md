@@ -279,6 +279,24 @@ Here are some bad examples:
 
 When there are many collections in the app, you can just type the prefix in the formula bar to see a list the available collections. As for variables, if you follow these guidelines to name your collections, you’ll be able to find them very easily in the formula bar as you develop your app.
 
+Never Filter in a collection (or generally in a canvas app) on non-unique values.
+
+Good example: ClearCollect(colEmployees, Filter(Employees, Email = User().Email));
+Bad example: ClearCollect(colEmployees, Filter(Employees, Title = User().FullName));
+
+The reason is that if there is more than 1 'John Smith' in company, then the collection will not always work as expected.
+By Filtering on a unique value like ID or Email, we can ensure that the Filter always works as it should.
+
+### Collections - Performance Tips
+
+When you are creating a collection which is getting data from a data source, use the ShowColumns function to make sure you are only pulling in the relevant data.
+
+Good example: ClearCollect(colEmployees, ShowColumns(Employees, "First Name", "Last Name", "Job Title", "Manager"));
+Bad example: ClearCollect(colEmployees, Employees);
+
+When you have multiple collections in your OnStart, use the Concurrent function to load them at the same time.
+You cannot put a collection which has a dependency on another collection in the same Concurrent function.
+
 ### Patching v Forms
 
 The two most common ways of updating a record are Patch() and SubmitForm().
