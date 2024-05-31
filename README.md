@@ -1,6 +1,6 @@
 # Welcome to Power Platform Best Practices!
 
-![Power Platform Logo](https://th.bing.com/th?id=OIP.BI_baSPa3TEBstjj-gEJQQHaJM&w=224&h=278&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2)
+![Power Platform Logo](https://decisioninc.com/wp-content/uploads/2022/10/microsoft_power_platform_icon_2022.png)
 
 This is a community lead repo, and anyone is free to submit a pull request.
 
