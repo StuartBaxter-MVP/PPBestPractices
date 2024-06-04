@@ -1,8 +1,8 @@
-#Canvas App Best Practices
+# Canvas App Best Practices
 
-##Control naming convention
+## Control naming convention
 
-##~ Screens
+## Screens
 
 Screen names should reflect the purpose of the screen, so that it’s easier to navigate through complex apps in PowerApps Studio.
 
