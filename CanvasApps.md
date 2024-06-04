@@ -1,6 +1,6 @@
 # Canvas App Best Practices
 
-## Control naming convention
+# Control naming convention
 
 ## Screens
 
@@ -84,7 +84,7 @@ When there are many variables in an app, you can just type the prefix in the for
 
 Ultimately, this approach leads to quicker app development.
 
-## App.Formulas v App.OnStart
+### App.Formulas v App.OnStart
 
 Code written in the app on start will take time to run, and ultimately slow down the loading of your app.
 
