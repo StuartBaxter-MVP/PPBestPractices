@@ -13,9 +13,9 @@ Feel free to refer to articles and blogs by other community members, but please 
 - [Model Driven Apps Best Practices](ModelDrivenApps.md)
 - [Canvas Apps Best Practices](CanvasApps.md)
 - [Power Automate Best Practices](PowerAutomate.md)
-- [Power Pages Best Practices](PowerPages.md)
-- [Power BI Best Practices](PowerBI.md)
-- [Copilot Best Practices](Copilot.md)
+- [Power Pages Best Practices](PowerPages.md) **COMING SOON**
+- [Power BI Best Practices](PowerBI.md) **COMING SOON**
+- [Copilot Best Practices](Copilot.md) **COMING SOON**
 
 
 
