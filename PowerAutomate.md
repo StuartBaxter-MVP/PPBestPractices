@@ -114,7 +114,7 @@ A condition allows you to define one or more conditions that will return true or
 
 Best practice is to avoid using nested if statements as this can create a pyramid effect in your flow.
 
-Where possible, use switch if the condition has more than one possible outcome – if you need to check multiple conditions and have more than one outcome, consider using a series of conditions, and effective use of terminate to stop the flow at the correct points – this is known as guard conditions, the concept is explained in [this article](https://jonasr.app/flow-guards/)
+Where possible, use switch if the condition has more than one possible outcome – if you need to check multiple conditions and have more than one outcome, consider using a series of conditions, and effective use of terminate to stop the flow at the correct points – this is known as guard conditions, the concept is explained in [this article from Jonas Rapp](https://jonasr.app/flow-guards/)
 
 Using guard conditions will result in an easy to read, and easy to maintain flow.
 
