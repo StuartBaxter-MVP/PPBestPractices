@@ -84,7 +84,7 @@ When there are many variables in an app, you can just type the prefix in the for
 
 Ultimately, this approach leads to quicker app development.
 
-### App.Formulas v App.OnStart
+## App.Formulas v App.OnStart
 
 Code written in the app on start will take time to run, and ultimately slow down the loading of your app.
 
@@ -193,7 +193,7 @@ To ensure a satisfying experience with the screen reader it is recommended to:
 - If a picture is not used as a button or a link (i.e. icon is there just for the decoration) and should not be read by the screen reader, make sure the AccessibleLabel is empty or not set.
 - If a picture or an icon is used as a button, then set TabIndex to 0 and AccessibleLabel to the link description.
 
-### Control type and structure
+## Control type and structure
 
 Using the right controls and grouping them will help screen reader users understand the structure of the app.
 
