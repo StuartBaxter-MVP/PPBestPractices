@@ -1,4 +1,4 @@
-# Power Automate Best Practices
+# Cloud Flows Best Practices
 
 ## Naming Convention
 
