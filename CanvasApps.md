@@ -99,7 +99,7 @@ Formula values that aren’t used until screen2 of an app is displayed need not 
 
 When creating a named formula, you should use a similar naming convention to variables, but prefix with nf.
 
-### Collections and Galleries
+## Collections and Galleries
 
 Use appropriate naming for your collection:
 
