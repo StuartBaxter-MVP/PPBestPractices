@@ -18,7 +18,7 @@ Business rules or JavaScript can be used to show and hide sections based on cond
 
 If users are performing a linear journey through the form, you could employ a business process flow to allow quick progression thorough the journey.
 
-#### Form naming convention
+#### Form naming conventions
 
 - Form Names should be camel case, prefixed with the name of the solution and suffixed by the type of form it is, if required enter additional information between the prefix and suffix to describe the purpose of the form (e.g. expenses_Main or expenses_AccountDetails_QuickView)
 - Tab labels should be sentencing case (e.g. Summary).
