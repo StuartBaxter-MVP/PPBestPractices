@@ -39,15 +39,13 @@ Components should be contained a single solution where possible, where multiple 
 
 As a minimum we should have at least 3 environments for every project:
 
-Development – used to create solutions.
-
-Test – used to test customisations.
-
-Production – Live system
+- Development – used to create solutions
+- Test – used to test customisations
+- Production – Live system
 
 Solutions deployed to Test or Production should be managed solutions.
 
-Use of environment variables will mean there is no need to create unmanaged layers in Production.
+Use of environment variables will mean there is very rarely a need to create unmanaged layers in Production.
 
 ## Environment Variables
 
