@@ -14,7 +14,7 @@ Sections and tabs should be used to enhance the user experience and careful cons
 
 When designing a form, you should consider how the user will interact with it, and order according to the ser journey they are performing.
 
-Business rules or JavaScript can be used to shoe and hide sections based on conditionality, but again, careful consideration should be given to how this will impact the user journey. It is also possible to create multiple forms and assign them to specific security roles, which is an effective way of only displaying relevant controls on a form.
+Business rules or JavaScript can be used to show and hide sections based on conditionality, but again, careful consideration should be given to how this will impact the user journey. It is also possible to create multiple forms and assign them to specific security roles, which is an effective way of only displaying relevant controls on a form.
 
 If users are performing a linear journey through the form, you could employ a business process flow to allow quick progression thorough the journey.
 
@@ -23,8 +23,8 @@ If users are performing a linear journey through the form, you could employ a bu
 - Form Names should be camel case, prefixed with the name of the solution and suffixed by the type of form it is, if required enter additional information between the prefix and suffix to describe the purpose of the form (e.g. expenses_Main or expenses_AccountDetails_QuickView)
 - Tab labels should be sentencing case (e.g. Summary).
 - Tab names should be camelCase and suffixed with \_Tab (e.g. summary_Tab or customerDetails_Tab)
-- Section names should be all caps (e.g. ACCOUNT INFORMATION)
-- Section labels should be camel case and suffixed with \_Section (e.g. accounInformation_Section)
+- Section labels should be all caps (e.g. ACCOUNT INFORMATION)
+- Section names should be camel case and suffixed with \_Section (e.g. accounInformation_Section)
 - Avoid using duplicate labels across multiple sections, as this will cause confusion for users (especially those using screen readers)
 - Subgrid labels should be all caps (e.g. CONTACTS)
 - Subgrid names should be camel case and suffixed by \_Grid (e.g. contacts_Grid)
@@ -51,7 +51,7 @@ Recommended best practice is to create custom commands using the below approach:
 
 [Customize the command bar - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/use-command-designer#create-or-edit-modern-commands)
 
-There are some limitations to be aware of. Customisation (including hiding) of out of the box commands is not currently support – for these scenarios you should make use of Ribbon Workbench via XRM Toolbox to hide the command, and recreate it using make.powerapps.com
+There are some limitations to be aware of. Customisation (including hiding) of out of the box commands is not currently supported – for these scenarios you should make use of Ribbon Workbench via XRM Toolbox to hide the command, and recreate it using make.powerapps.com
 
 ### Accessibility
 
