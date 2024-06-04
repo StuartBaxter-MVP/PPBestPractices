@@ -1,3 +1,7 @@
+# What is Dataverse?
+
+Dataverse lets you securely store and manage data that's used by business applications. Data within Dataverse is stored within a set of tables. A table is a set of rows (formerly referred to as records) and columns (formerly referred to as fields/attributes). Each column in the table is designed to store a certain type of data, for example, name, age, salary, and so on. Dataverse includes a base set of standard tables that cover typical scenarios, but you can also create custom tables specific to your organization and populate them with data by using Power Query. App makers can then use Power Apps to build rich applications that use this data.
+
 # Database Design
 
 When designing your database, careful consideration should be given to the tables used, and the relationships between them. You should focus on minimising the number of instances of the same data being held.
