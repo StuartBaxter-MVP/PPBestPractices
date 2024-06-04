@@ -1,10 +1,8 @@
-# App Development
+#Canvas App Best Practices
 
-## Canvas App Development
+##Control naming convention
 
-### Control naming convention
-
-#### Screens
+##~ Screens
 
 Screen names should reflect the purpose of the screen, so that it’s easier to navigate through complex apps in PowerApps Studio.
 
@@ -22,7 +20,7 @@ Here are some bad examples:
 - EmpProfDetails
 - Thrive Help
 
-#### Controls
+### Controls
 
 Controls should be appropriately named to describe the type and purpose of the control.
 
@@ -54,7 +52,7 @@ Here is a bad example:
 
 - User Name
 
-#### Variables
+### Variables
 
 - Be descriptive of the variable’s function. Think about what the variable is bound to and how it’s used, and then name it accordingly.
 - Prefix your global and context variables differently.
@@ -86,7 +84,7 @@ When there are many variables in an app, you can just type the prefix in the for
 
 Ultimately, this approach leads to quicker app development.
 
-### App.Formulas v App.OnStart
+## App.Formulas v App.OnStart
 
 Code written in the app on start will take time to run, and ultimately slow down the loading of your app.
 
@@ -136,7 +134,7 @@ When you are creating a collection which is getting data from a data source, use
 Good example: ClearCollect(colEmployees, ShowColumns(Employees, "First Name", "Last Name", "Job Title", "Manager"));
 Bad example: ClearCollect(colEmployees, Employees);
 
-### Patching v Forms
+## Patching v Forms
 
 The two most common ways of updating a record are Patch() and SubmitForm().
 
@@ -152,11 +150,11 @@ Downsides of forms:
 
 - can only write to one record, in one table – if you need to do more complex updates (such as updating an account and a contact in a single button click) you should use Patch()
 
-### Accessibility
+## Accessibility
 
 Accessibility is paramount to providing an inclusive app for end users.
 
-#### Layout and colour
+### Layout and colour
 
 Common sense and uncomplicated design will help apps be more accessible to all users.
 
@@ -168,7 +166,7 @@ When doing heavy customization of apps take note of the below suggestions. Power
 - Ensure layout follows a logical flow when read from top to bottom, left to right.
 - Create a responsive app so that low-vision users can zoom in and use it without scrolling back and forth.
 
-#### Keyboard
+### Keyboard
 
 When testing your app's accessibility, ensure the app can be used by keyboard only, with or without a screen reader.
 
@@ -178,7 +176,7 @@ The Tab key should navigate to interactive elements in a logical order. You can 
 - Do not set TabIndex greater than zero.
 - Ensure that the Simplified tab index app setting is enabled.
 
-#### Screen readers
+### Screen readers
 
 The following screen readers have been verified to work with Power Apps:
 
@@ -195,7 +193,7 @@ To ensure a satisfying experience with the screen reader it is recommended to:
 - If a picture is not used as a button or a link (i.e. icon is there just for the decoration) and should not be read by the screen reader, make sure the AccessibleLabel is empty or not set.
 - If a picture or an icon is used as a button, then set TabIndex to 0 and AccessibleLabel to the link description.
 
-#### Control type and structure
+### Control type and structure
 
 Using the right controls and grouping them will help screen reader users understand the structure of the app.
 
@@ -203,7 +201,7 @@ Using the right controls and grouping them will help screen reader users underst
 - Use a Button instead of a Label for interactive text.
 - Group related content in Containers.
 
-### Components and Component Libraries
+## Components and Component Libraries
 
 Components allow you to reuse pats of your app in other screens (local components) or even other apps (component libraries).
 
