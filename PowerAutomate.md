@@ -14,7 +14,7 @@ In the case of child flows, you should follow the same convention, but prefix wi
 
 ### Naming Actions
 
-Actions should always be renamed to describe what the action is doing, to minimise confusion, remove spaces and suffix a description of the actions purpose on the OOTB name.
+Actions should always be renamed to describe what the action is doing, to minimise confusion, remove spaces and suffix a description of the action's purpose on the OOTB name.
 
 For example:
 
