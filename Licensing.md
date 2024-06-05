@@ -1,4 +1,4 @@
-##Why do we have licensing in the first place?
+## Why do we have licensing in the first place?
 Short answer is because of Standard and Premium connectors.
 
 Premium connectors cannot be utilized without having Premium licenses.
