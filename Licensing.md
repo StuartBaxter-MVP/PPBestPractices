@@ -37,7 +37,8 @@ All of these are user based, which means, these licenses needs to be allocated t
 
 Cost: $20 per user/month
 
-Capabilities of this license subscription
+Capabilities of this license subscription:
+
 - Users can run multiple Power Apps applications.
 - Users can run multiple Power Pages websites.
 - 500 AI builder service credits are accrued with each number of license (What is AI Builder and it's capabilities, click here to check).
@@ -53,7 +54,8 @@ Capabilities of this license subscription
 
 Cost: $5 per user/month
 
-Capabilities of this license subscription
+Capabilities of this license subscription:
+
 - Users can run either 1 Power Apps application or 1 Power Pages website.
 - 250 AI builder service credits are accrued with each number of license (What is AI Builder and it's capabilities, click here to check).
 - Users can use all the Standard connectors.
@@ -69,7 +71,8 @@ Capabilities of this license subscription
 Cost : $10 per active user/month
 Active user is any unique user who launches the Power App at least once in a given month.
 
-Capabilities of this license subscription
+Capabilities of this license subscription:
+
 - Users can run only 1 Power Apps application.
 - No AI builder service credits are accrued with each number of license.
 - Users can use all the Standard connectors.
