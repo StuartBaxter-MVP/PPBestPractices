@@ -10,7 +10,7 @@ Standard Connectors examples:
 - Approvals
 - Dropbox
   
-Premium Connectors examples
+Premium Connectors examples:
 - Dataverse
 - Azure Automation
 - Salesforce
