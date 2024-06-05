@@ -9,7 +9,7 @@ Standard Connectors examples:
 - Adobe Acrobat Sign
 - Approvals
 - Dropbox
-- 
+  
 Premium Connectors examples
 - Dataverse
 - Azure Automation
