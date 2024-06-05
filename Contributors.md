@@ -4,3 +4,4 @@
 - [Parvez Ghurma](https://www.linkedin.com/in/parvezghumra)
 - [Bartosz Sobolewski](https://www.linkedin.com/in/bartoszsobolewski)
 - [Sebastian Sochacki](https://www.linkedin.com/in/sebastian-sochacki-10b63865)
+- [Sunil Kumar](https://www.linkedin.com/in/powertrainer/)
