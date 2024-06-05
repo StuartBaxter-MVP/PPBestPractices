@@ -94,28 +94,6 @@ For example:
 
 Further info on environment variables can be found at [Use environment variables in Power Platform solutions - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/EnvironmentVariables)
 
-## Licencing
-
-It is important to consider licencing impact of the solutions we build.
-
-Power Apps Licencing comes in 3 models:
-
-- Premium: Allows access to as many apps as you can build
-- Per App: Allows access to a single app
-- Per App Pay as You Go: Allows access to a single app, on a pay as you go basis, billed monthly based on unique active users. In short if a user logs on in a given month, they are billed for the month, if they don’t, there is no charge for that month
-
-Details on request limits can be found at <https://learn.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits>
-
-Power Automate Licencing also comes in 3 models:
-
-- Premium – Access to as many flows as you can build
-- Per Process – a single process
-- Per process Hosted – a single process, with hosted machines
-
-Details on request limits can be found at <https://learn.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits>
-
-Running flows in the context of an app does not require additional Power Automate Licencing. Find out more about how to associate flows with an app at [Associate flows with apps - Power Automate | Microsoft Learn](https://learn.microsoft.com/en-us/power-automate/associate-flow-to-app)
-
 ## Dataverse v SharePoint
 
 SharePoint is a popular option for data storage for Power Apps, due to not needing a premium licence, but should be carefully considered. This article details key considerations: [8 top reasons to use Dataverse or SharePoint lists in the Power Platform (sharepains.com)](https://sharepains.com/2021/04/15/dataverse-or-sharepoint-lists/#Data_volume)
