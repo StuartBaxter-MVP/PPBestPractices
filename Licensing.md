@@ -33,7 +33,7 @@ All of these are user based, which means, these licenses needs to be allocated t
 - Power Apps per App pay-as-you-go (PAYG)
 
  
-###Power Apps Premium 
+### Power Apps Premium 
 
 Cost: $20 per user/month
 
