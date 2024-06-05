@@ -17,7 +17,7 @@ Premium Connectors examples:
 - SAP
 - ServiceNow
   
-Custom connectors allows you to connect to APIs or services that are not available through the built-in standard or premium connectors. This flexibility is powerful but comes with the requirement for premium licensing.
+Custom connectors allow you to connect to APIs or services that are not available through the built-in standard or premium connectors. This flexibility is powerful but comes with the requirement for premium licensing.
 
 ## Seeded Licenses
 Working with standard connectors are covered under seeded licenses.
