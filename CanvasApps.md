@@ -209,3 +209,33 @@ In situations where there is a possibility of reuse, you should aways create com
 
 Further information on components and component libraries can be found at [Component library - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/component-library)
 
+## Commenting code
+
+Code comments serve several important purposes:
+•	Explaining the function of specific pieces of code
+•	Clarifying aspects that might not be immediately clear to the reader
+•	Providing insight into the rationale behind certain code choices
+•	Acting as reminders for future changes or improvements
+Comments also become highly useful when you need to 'comment out' code. This means converting code into a comment, so it doesn't execute, but remains available for future reference.
+
+**CAUTION**
+Be cautious! Continuously keeping commented-out code is considered poor practice. Commented-out code can be helpful for quickly testing different approaches, but avoid deplying solutions with commented out code to production systems. Instead, utilize source control to review previous versions of your code.
+
+There are two types of comments:
+•	Line comments (//): Use these to describe what the subsequent lines or lines of code do.
+// Increment the counter by 1
+UpdateContext({counter: counter + 1})
+
+• Block comments (/ *... */): Use these to comment out multiple lines of code.
+
+/* This is a block comment
+   which spans multiple
+   lines */
+
+For better readability, when commenting on a block of code, place a comment before the code block starts and another at the end. This helps to demarcate the section of code being described.
+ 
+Recommendations:
+•	Add comments after using the Format text feature to ensure clarity, especially before code blocks.
+•	Don't worry about adding too many or overly long comments. All comments are removed when PowerApps creates the client app package, so they won't affect package size or app performance.
+
+
