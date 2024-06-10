@@ -40,7 +40,18 @@ The completed status of an activity will have several sub status values associat
 
 Activities involve one or more participants, called activity parties in Dataverse. For a meeting activity, the participants are those contacts or users attending the meeting. For a telephone call or fax activity, the parties are the caller and the person who is called.
 
-# General Advice
+
+
+# Application Lifecycle Management
+Application Lifecycle Management (ALM) encompasses the governance, development, and maintenance of applications. It encompasses various disciplines such as requirements management, software architecture, development, testing, maintenance, change management, continuous integration, project management, deployment, and release management. ALM tools streamline communication and collaboration between software development teams and related departments, automating software development and delivery processes. ALM integrates these disciplines to drive efficiency through predictable and repeatable software delivery.
+This document focuses on the delivery and testing aspects of ALM.
+
+On the Power Platform, two key components facilitate lifecycle management: Solutions and Environments.
+
+## Environments
+
+Environments serve as spaces to store, manage, and share Power Platform projects, separating apps based on roles, security requirements, or target audiences.
+Solutions are containers within an environment, akin to "folders" for projects, grouping together apps and flows with a common purpose. Solutions can be moved between environments through export and import, forming the foundational principle of our ALM strategy. This enables development in one environment and usage in another, allowing for building and testing without impacting users or data, crucial for systems where downtime or data loss is more than an inconvenience.
 
 ## Publishers
 
@@ -50,27 +61,20 @@ Solution publishers allow you to specify who created the solution. You should al
 - Name: StuartBaxter
 - Description: Microsoft MVP - Business Appplications
 - Prefix: sbax
-- Choice Value Prefix: 16886 
+- Choice Value Prefix: 16886
 
 ## Solutions
 
-Solutions are containers for your customisations, everything we build should be contained with a solution, this will facilitate smooth deployment to other environments as part of the standard ALM process.
+Solutions come in two flavors: Managed and Unmanaged. Unmanaged solutions are where work is performed, allowing users to add, remove, and edit content. Managed solutions, on the other hand, are read-only and should be deployed to production. Changes to managed solutions require importing an update over the old version. Using unmanaged solutions in development and managed solutions in production ensures that changes are made in development rather than directly in production.
 
-Components should be contained a single solution where possible, where multiple solutions are required, components should only be present in one solution, to reduce the risk of solution layering causing unexpected issues.
 
-## Environment Strategy / ALM
+### Connection References
+A connection is a wrapper around an API that enables communication between underlying services and Microsoft Power Automate and Microsoft Power Apps. It allows users to connect accounts and utilize pre-built actions and triggers to build apps and workflows.
 
-As a minimum we should have at least 3 environments for every project:
+A connection reference, a solution component, contains information about a connector. Both canvas apps and operations within Power Automate flows bind to a connection reference. Importing a connection reference into a target environment requires no further configuration. To change a specific connection associated with a canvas app or flow, the connection reference component within the solution is edited.
+Leveraging connection references in our solutions ensures that when updates are released to managed solutions, all apps and flows remain connected to their appropriate solutions.
 
-- Development – used to create solutions
-- Test – used to test customisations
-- Production – Live system
-
-Solutions deployed to Test or Production should be managed solutions.
-
-Use of environment variables will mean there is very rarely a need to create unmanaged layers in Production.
-
-## Environment Variables
+### Environment Variables
 
 EVs are a key component of healthy ALM and serve to allow different values to be held in different environments. An example is a SharePoint data source, in development it could point to one site, with a different site in test and production.
 
