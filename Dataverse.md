@@ -120,7 +120,7 @@ It is worth noting that SharePoint can be customised to suit many business needs
 Every environment, without exception, should be assigned a security group – failure to assign a security group will mean that the entire tenant can access the environment.
 
 ## Security Roles
-When creating security roles ensure the naem of the security role is indicative of the tables/solution the security role is being used in alongside the level of access being provided for example "Expenses App - Admin" 
+When creating security roles ensure the name of the security role is indicative of the tables/solution the security role is being used in alongside the level of access being provided for example "Expenses App - Admin" 
 
 ## App Security Groups
 
