@@ -130,10 +130,11 @@ When one action in a scope fails, the entire scope will fail, this can be useful
 
 ## Error Handling
 
-Code first developers often make use of the try-catch approach when dealing with error handling, this can be achieved in cloud flows using scope actions and run after (more info on run after can be found at [Configure run after option - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/error-handling/2-configure-run-after))
+Code first developers often make use of the try-catch-finally approach when dealing with error handling, this can be achieved in cloud flows using scope actions and run after (more info on run after can be found at [Configure run after option - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/error-handling/2-configure-run-after))
 
 - “Scope One” contains the actions you are trying to do (“try”)
 - “Scope two” contains your error handling and is set to run after “Scope One” fails or times out (i.e. not if it succeeds, or is skipped) you could send an email to a support team, or post a message in a teams chat or channel, the actions in the catch scope will vary from project to project, but the overall theme is the same – telling someone that a business critical flow has not successfully completed so they can take the necessary action to ensure business continuity.
+- "Scope Three" contains the actions that must occur regardless of the success or failure of the other two scopes
 
 ## Child Flows
 
@@ -144,6 +145,9 @@ A common use case for child flows is sending of emails with a specific format, o
 Child flows have a manual trigger (with optional inputs) and should end with a respond to app or flow action (to provide an output to the parent flow).
 
 An example child flow might accept a date of birth as an input, calculate age of the person in years and months based on today’s date, and return this value in a defined format to a parent app or flow.
+
+For ease of tracking it is recommended that one of the inputs of the child flow be the URL to the parent flow that triggered the child flow. This can be acheived by using the following expression in the inputs when calling the child flow:
+concat('https://make.powerautomate.com/environments/', workflow()?['tags']['environmentName'], '/flows/', workflow()?['name'], '/runs/', workflow()?['run']['name'])
 
 Further information about child flows can be found at [Create child Flows - Power Automate | Microsoft Learn](https://learn.microsoft.com/en-us/power-automate/create-child-flows)
 
