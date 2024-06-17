@@ -92,17 +92,19 @@ Be smart! PowerApps lets context variables and global variables share the same n
 
 - Prefix context variables with loc.
 - Prefix global variables with gbl.
-- After the prefix state the data type the variable will contain with a three letter code. This ensures that if the application runs into errors related to that variable developers can quickly ascertain the expected data type.
-- The name after the prefix should indicate the intent/purpose of the variable. Multiple words can be used and don’t have to be separated by any special characters (for example, spaces or underscores), provided that the first letter of each word is capitalized.
+- After the prefix state the data type the variable will contain with a three letter code (see table below). Variables can only hold a single data type throughout the app. If functions try to write different types to a vairable an error will occur. Stating the data type in the variable name can make it    much simpler to diagnose these errors.
+- The name after the data type should indicate the intent/purpose of the variable. Multiple words can be used and don’t have to be separated by any special characters (for example, spaces or underscores), provided that the first letter of each word is capitalized.
 - Use Camel casing. Begin your variable names with a prefix in lowercase letters, and then capitalize the first letter of each word in the name (that is, lowerUppperUpper).
+
 
 | **Data Type**|**Code**|
 |--------------|--------|
-| String       | txt    |
-| Record       | rec    |
-| Boolean      | bol    |
-| Table        | tab    |
-| Number       | int    |
+| Text         | Txt    |
+| Number       | Num    |
+| Date         | Dte    |
+| Boolean      | Bol    |
+| Record       | Rec    |
+| Table        | Tab    |
 
 Here are some good examples:
 
