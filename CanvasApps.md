@@ -26,19 +26,50 @@ Controls should be appropriately named to describe the type and purpose of the c
 
 All control names on the canvas should use camel case. They should begin with a three-character type descriptor, followed by the purpose of the control. This approach helps identify the type of control and makes it easier to build formulas and search.
 
-| **Control Type** | **Prefix** |
-| --- | --- |
-| Button | btn |
-| Combo box | cmb |
-| Date picker | dte |
-| Drop down | drp |
-| Html text | htm |
-| Icon | ico |
-| Image | img |
-| label | lbl |
-| Shape (rectangle, circle, etc) | shp |
-| Text input | txt |
-| Timer | tim |
+|   **Control Type**                         |     **Prefix**      |
+|--------------------------------------------|---------------------|
+|     3D object                              |     tdo             |
+|     Add picture                            |     apc             |
+|     Address input                          |     adr             |
+|     Audio                                  |     aud             |
+|     Barcode   scanner                      |     bar             |
+|     Button                                 |     btn             |
+|     Camera                                 |     cam             |
+|     Canvas                                 |     can             |
+|     Charts (Pie   chart, bar chart etc)    |     chr             |
+|     Check box                              |     chk             |
+|     Combo box                              |     cmb             |
+|     Container                              |     con             |
+|     Data table                             |     tbl             |
+|     Date picker                            |     dte             |
+|     Drop down                              |     drp             |
+|     Export                                 |     exp             |
+|     Forms (New /   Edit etc)               |     frm             |
+|     Gallery                                |     gal             |
+|     Horizontal   container                 |     con             |
+|     HTML text                              |     htm             |
+|     Icon                                   |     ico             |
+|     Image                                  |     img             |
+|     Import                                 |     imp             |
+|     Label                                  |     lbl             |
+|     List box                               |     lst             |
+|     Map                                    |     map             |
+|     Measuring   camera                     |     mec             |
+|     Microphone                             |     mic             |
+|     Microsoft   Stream                     |     vid             |
+|     PDF viewer                             |     pvr             |
+|     Pen input                              |     pin             |
+|     Radio                                  |     rdo             |
+|     Rating                                 |     rtg             |
+|     Rich text   editor                     |     ric             |
+|     Shape   (Rectangle, Circle etc)        |     shp             |
+|     Slider                                 |     slr             |
+|     Text input                             |     txt             |
+|     Timer                                  |     tmr             |
+|     Toggle                                 |     tgl             |
+|     Vertical   container                   |     con             |
+|     Video                                  |     vid             |
+
 
 Control names must be unique across an application. If a control is reused on multiple screens, the short
 
@@ -61,13 +92,24 @@ Be smart! PowerApps lets context variables and global variables share the same n
 
 - Prefix context variables with loc.
 - Prefix global variables with gbl.
-- The name after the prefix should indicate the intent/purpose of the variable. Multiple words can be used and don’t have to be separated by any special characters (for example, spaces or underscores), provided that the first letter of each word is capitalized.
+- After the prefix state the data type the variable will contain with a three letter code (see table below). Variables can only hold a single data type throughout the app. If functions try to write different types to a vairable an error will occur. Stating the data type in the variable name can make it    much simpler to diagnose these errors.
+- The name after the data type should indicate the intent/purpose of the variable. Multiple words can be used and don’t have to be separated by any special characters (for example, spaces or underscores), provided that the first letter of each word is capitalized.
 - Use Camel casing. Begin your variable names with a prefix in lowercase letters, and then capitalize the first letter of each word in the name (that is, lowerUppperUpper).
+
+
+| **Data Type**|**Code**|
+|--------------|--------|
+| Text         | Txt    |
+| Number       | Num    |
+| Date         | Dte    |
+| Boolean      | Bol    |
+| Record       | Rec    |
+| Table        | Tab    |
 
 Here are some good examples:
 
-- Global variable: gblFocusedBorderColor
-- Context variable: locSuccessMessage
+- Global variable: gblrecCurrentUser
+- Context variable: loctxtSuccessMessage
 
 Here are some bad examples:
 
