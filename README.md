@@ -27,6 +27,7 @@ Thank you to everyone who has contributed to the repo!
 - [Bartosz Sobolewski](https://www.linkedin.com/in/bartoszsobolewski)
 - [Sebastian Sochacki](https://www.linkedin.com/in/sebastian-sochacki-10b63865)
 - [Sunil Kumar](https://www.linkedin.com/in/powertrainer/)
+- [William Johnson](https://www.linkedin.com/in/william-johnson-902574196/)
 
 
 
