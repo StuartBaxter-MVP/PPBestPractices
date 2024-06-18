@@ -71,9 +71,7 @@ All control names on the canvas should use camel case. They should begin with a 
 |     Video                                  |     vid             |
 
 
-Control names must be unique across an application. If a control is reused on multiple screens, the short
-
-screen name should be suffixed at the end – for example, galBottomNavMenuHS, where “HS” stands for “Home Screen.” This approach makes it easier to reference the control in formulas across screens.
+Control names must be unique across an application. If a control is reused on multiple screens, the short screen name should be suffixed at the end – for example, galBottomNavMenuHS, where “HS” stands for “Home Screen.” This approach makes it easier to reference the control in formulas across screens.
 
 Here’s a good example:
 
