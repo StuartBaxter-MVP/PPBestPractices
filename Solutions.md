@@ -26,7 +26,7 @@ An upgrade involves replacing an existing solution with a new version. Updates, 
 
 ## Segmented solutions:
 
-Use solution segmentation so that you only include entity components that are updated when you distribute solution updates. With solution segmentation, you export solution updates with selected entity assets, such as entity fields, forms, and views, rather than entire entities with all the assets.
+If you use segemented solutions, only include entity components that are updated when you distribute solution updates. With solution segmentation, you export solution updates with selected entity assets, such as entity fields, forms, and views, rather than entire entities with all the assets.
 
 When dividing a solution into segments (**multiple solutions**), ensure that the segments are arranged in a sequence or order that prevents any issues with dependencies.
 
