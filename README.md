@@ -6,17 +6,18 @@ This is a community lead repo, and anyone is free to submit a pull request.
 
 Feel free to refer to articles and blogs by other community members, but please do give them credit for thier work using a link to the article/blog post
 
-# Power Platform Development Basics
+# Contents
 
 ## Product Specific Best Practices
-- [Dataverse Best Practices](Dataverse.md)
-- [Model Driven Apps Best Practices](ModelDrivenApps.md)
-- [Canvas Apps Best Practices](CanvasApps.md)
-- [Power Automate Best Practices](PowerAutomate.md)
+- [Dataverse](Dataverse.md)
+- [Solutions](Solutions.md)
+- [Model Driven Apps](ModelDrivenApps.md)
+- [Canvas Apps](CanvasApps.md)
+- [Power Automate](PowerAutomate.md)
 - [Licensing](Licensing.md)
-- [Power Pages Best Practices](PowerPages.md) **COMING SOON**
-- [Power BI Best Practices](PowerBI.md) **COMING SOON**
-- [Copilot Best Practices](Copilot.md) **COMING SOON**
+- [Power Pages](PowerPages.md) **COMING SOON**
+- [Power BI](PowerBI.md) **COMING SOON**
+- [Copilot](Copilot.md) **COMING SOON**
 
 ## Our contributors
 
@@ -28,6 +29,7 @@ Thank you to everyone who has contributed to the repo!
 - [Sebastian Sochacki](https://www.linkedin.com/in/sebastian-sochacki-10b63865)
 - [Sunil Kumar](https://www.linkedin.com/in/powertrainer/)
 - [William Johnson](https://www.linkedin.com/in/william-johnson-902574196/)
+- [Prakash Kalimuthu](https://www.linkedin.com/in/prakash-kalimuthu-9280aa100/)
 
 
 
