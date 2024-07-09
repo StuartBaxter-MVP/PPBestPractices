@@ -74,6 +74,12 @@ You can use any expression in the right column of “Map”, which allows for ca
 
 ## Concurrency
 
+### Renaming multiple actions inside a flow
+
+As it somtimes is tideous to rename all actions by hand and expressions are not updated at all, there is a community tool to help.
+The project is a web-based tool for renaming actions within a JSON definition used in PowerAutomate. 
+It allows users to load JSON, rename actions individually or in bulk, and copy the updated JSON to the clipboard. The page is available [here](https://lucashahne.github.io/PowerAutomate-Actions-Json-Formatter/)
+
 ### Flow run concurrency
 
 Flow run concurrency allows you to control how many runs of a flow will trigger at the same time. For example: if you have a flow that takes over an hour, running on an hourly basis, you could set the concurrency to 1. This would mean that the run due to start at 10am would only begin after the run that started at 9am. The 10am run would show a status of “queued”.
