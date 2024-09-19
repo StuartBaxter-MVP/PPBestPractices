@@ -24,7 +24,7 @@ If users are performing a linear journey through the form, you could employ a bu
 - Tab labels should be sentencing case (e.g. Summary).
 - Tab names should be camelCase and suffixed with \_Tab (e.g. summary_Tab or customerDetails_Tab)
 - Section labels should be all caps (e.g. ACCOUNT INFORMATION)
-- Section names should be camel case and suffixed with \_Section (e.g. accounInformation_Section)
+- Section names should be camel case and suffixed with \_Section (e.g. accountInformation_Section)
 - Avoid using duplicate labels across multiple sections, as this will cause confusion for users (especially those using screen readers)
 - Subgrid labels should be all caps (e.g. CONTACTS)
 - Subgrid names should be camel case and suffixed by \_Grid (e.g. contacts_Grid)
